@@ -1,0 +1,29 @@
+{
+    "notebooks": [
+      {
+        "Name": "Quantum Explorations",
+        "Description": "A notebook dedicated to quantum physics theories and experiments.",
+        "NotebookID": "NB001",
+        "FileCounts": 5
+      },
+      {
+        "Name": "Cosmic Chronicles",
+        "Description": "This notebook contains detailed observations of celestial events and astronomical phenomena.",
+        "NotebookID": "NB002",
+        "FileCounts": 8
+      },
+      {
+        "Name": "Botanical Wonders",
+        "Description": "A compilation of research on rare plants and their ecosystems.",
+        "NotebookID": "NB003",
+        "FileCounts": 3
+      },
+      {
+        "Name": "Ancient Civilizations",
+        "Description": "An insightful journey through the history and discoveries of ancient civilizations.",
+        "NotebookID": "NB004",
+        "FileCounts": 6
+      }
+    ]
+  }
+  

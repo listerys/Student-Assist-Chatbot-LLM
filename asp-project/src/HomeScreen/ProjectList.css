@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Set height to 400px */
+  }
+  
+  /* Card */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    width: 200px;
+    background-color: #1c1c1e; /* Slightly lighter than background for contrast */
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000; /* Increased shadow for better contrast */
+    margin: 0 20px; /* Spacing between cards */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+    margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Even larger shadow on hover */
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  /* Title */
+/* Title */
+.title {
+  color: #ffffff; /* Pure white for strong contrast */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em; /* Slightly larger for emphasis */
+  font-weight: 700; /* Bolder weight for the title */
+  margin-top: 20px; /* Add space at the top */
+  margin-bottom: 15px; /* Space before the description */
+  text-align: center; /* Center-align for balance */
+  margin-left: 8px;
+  margin-right: 8px;
+  text-decoration: underline; /* Add underline */
+  text-decoration-color: purple; /* Set underline color to purple */
+  text-decoration-thickness: 2px; /* Set underline thickness */
+}
+  
+  /* Description */
+/* Add your existing CSS and adjust the following for the description and file count */
+
+.description {
+    color: #a0a0a0; /* Lighter grey for a subtle look */
+    text-align: center; /* Center-align for consistency */
+    padding: 0 20px; /* Padding for better readability */
+    font-size: 0.8em; /* Smaller font size for subtlety */
+    margin-top: 5px; /* Spacing after the title */
+  }
+  
+  .file-count {
+    color: #c0c0c0; /* Slightly lighter grey */
+    text-align: center; /* Center-align for consistency */
+    font-size: 0.9em; /* Standard size for readability */
+    margin-top: 10px; /* Spacing after the description */
+  }
+  
+  /* Remove bar and circle styles if not used */
+  
+
+/* Add your existing CSS here and include the following for the SVG button */
+/* Add to your existing CSS */
+
+/* Add to your existing CSS */
+
+.card .hover-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  padding: 5px; /* Additional padding for a larger clickable area */
+}
+
+.card .hover-button img {
+  height: 30px; /* Increased size */
+  width: 30px; /* Increased size */
+}
+
+.card:hover .hover-button {
+  opacity: 1; /* Visible on hover */
+}
+
