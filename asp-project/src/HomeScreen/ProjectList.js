@@ -1,17 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import data from './data.json';
+import './ProjectList.css';
+import circleSvg from './circle.svg';
 
-const ProjectList = ({ title, description, link }) => {
-    console.log(title, description, link);
-    return (
-        <div className="card">
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <NavLink to={link} className="card-button">
-                Go to File Upload
-            </NavLink>
+const DynamicCard = () => {
+  return (
+    <div className="container">
+      {data.notebooks.map((notebook) => (
+        <div className="card" key={notebook.NotebookID}>
+          <NavLink to={`/${notebook.NotebookID}`} className="hover-button" activeClassName="active">
+            <img src={circleSvg} alt="Open" />
+          </NavLink>
+          <h3 className="title">{notebook.Name}</h3>
+          <p className="description"><strong>Description:</strong> {notebook.Description}</p>
+          <p className="file-count"><strong>File Count:</strong> {notebook.FileCounts}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
-export default ProjectList;
+export default DynamicCard;

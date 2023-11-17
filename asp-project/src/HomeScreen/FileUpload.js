@@ -13,8 +13,8 @@ function FileUpload() {
   const S3_BUCKET = "aspproject2023";
   const REGION = "us-east-2";
   AWS.config.update({
-    accessKeyId: "AKIAUGKPRCK5NS3ILIIU",
-    secretAccessKey: "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",
+    accessKeyId: "AKIAUGKPRCK5NrreS3ILIIU",
+    secretAccessKey: "ESW4nL8YmoTonr+rrtIWeBZZ7bH1Ds52xK4iCm6jyQy",
   });
   const s3 = new AWS.S3({
     params: { Bucket: S3_BUCKET },

@@ -10,9 +10,7 @@ body {
 }
 
 .form-container {
-	width: 100vw;
 	height: 100vh;
-	background-color: #1e1e1e; /* Darker shade for the form background */
 	display: flex;
 	justify-content: center;
 	align-items: center;
