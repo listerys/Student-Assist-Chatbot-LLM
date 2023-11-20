@@ -17,6 +17,7 @@ const DynamicCard = () => {
           <p className="file-count"><strong>File Count:</strong> {notebook.FileCounts}</p>
         </div>
       ))}
+      <button className="add-button">+</button>
     </div>
   );
 };

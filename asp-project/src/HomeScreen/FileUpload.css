@@ -10,10 +10,11 @@ body {
 }
 
 .form-container {
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: 220px;
+	padding-top: 20px;
 }
 
 .upload-files-container {
@@ -92,3 +93,21 @@ body {
 .default-file-input{
     display: none;
 }
+/* ... existing styles ... */
+
+.add-button {
+	background-color: #4caf50; /* Button color */
+	color: white; /* Text color */
+	border: none; /* No border */
+	border-radius: 4px; /* Rounded corners */
+	padding: 10px 20px; /* Padding for size */
+	cursor: pointer; /* Cursor on hover */
+	margin-top: 20px; /* Margin from the last element */
+	font-size: 16px; /* Font size */
+	transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  .add-button:hover {
+	background-color: darken(#4caf50, 10%); /* Slightly darker on hover */
+  }
+  

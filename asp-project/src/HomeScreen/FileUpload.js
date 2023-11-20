@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import AWS from "aws-sdk";
 import "./FileUpload.css"; // Import your CSS file
+import NotebookFilesTable from "./NotebookFilesTable";
+import { useParams } from "react-router-dom";
 
 function FileUpload() {
   const [file, setFile] = useState(null);
@@ -8,6 +10,7 @@ function FileUpload() {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isFileDropped, setIsFileDropped] = useState(false);
   const [showError, setShowError] = useState(false);
+  const { NotebookID } = useParams();
 
   // AWS Configurations
   const S3_BUCKET = "aspproject2023";
@@ -89,6 +92,8 @@ function FileUpload() {
   }, []);
 
   return (
+    <div>
+      <NotebookFilesTable notebookId={NotebookID} />
     <div className="form-container">
       <div className="upload-files-container">
         <div className="drag-file-area">
@@ -116,6 +121,7 @@ function FileUpload() {
         </div>
         <button type="button" className="upload-button" onClick={uploadFile}>Upload</button>
       </div>
+    </div>
     </div>
   );
 }

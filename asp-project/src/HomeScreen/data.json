@@ -1,29 +1,51 @@
 {
-    "notebooks": [
-      {
-        "Name": "Quantum Explorations",
-        "Description": "A notebook dedicated to quantum physics theories and experiments.",
-        "NotebookID": "NB001",
-        "FileCounts": 5
-      },
-      {
-        "Name": "Cosmic Chronicles",
-        "Description": "This notebook contains detailed observations of celestial events and astronomical phenomena.",
-        "NotebookID": "NB002",
-        "FileCounts": 8
-      },
-      {
-        "Name": "Botanical Wonders",
-        "Description": "A compilation of research on rare plants and their ecosystems.",
-        "NotebookID": "NB003",
-        "FileCounts": 3
-      },
-      {
-        "Name": "Ancient Civilizations",
-        "Description": "An insightful journey through the history and discoveries of ancient civilizations.",
-        "NotebookID": "NB004",
-        "FileCounts": 6
+  "notebooks": [
+    {
+      "Name": "Quantum Explorations",
+      "Description": "A notebook dedicated to quantum physics theories and experiments.",
+      "NotebookID": "NB001",
+      "FileCounts": 4,
+      "Files": {
+        "File1": {"Name": "Quantum_Theory_Overview.pdf", "Type": "Document"},
+        "File2": {"Name": "Particle_Behavior.docx", "Type": "Document"},
+        "File3": {"Name": "Experiment_Results.txt", "Type": "Document"},
+        "File4": {"Name": "Quantum_Lecture_Audio.mp3", "Type": "Audio"}
       }
-    ]
-  }
-  
+    },
+    {
+      "Name": "Cosmic Chronicles",
+      "Description": "This notebook contains detailed observations of celestial events and astronomical phenomena.",
+      "NotebookID": "NB002",
+      "FileCounts": 4,
+      "Files": {
+        "File1": {"Name": "Stellar_Formations.pdf", "Type": "Document"},
+        "File2": {"Name": "Galactic_Photos.txt", "Type": "Document"},
+        "File3": {"Name": "Astronomy_Lecture_Audio.mp3", "Type": "Audio"},
+        "File4": {"Name": "Cosmic_Timeline.docx", "Type": "Document"}
+      }
+    },
+    {
+      "Name": "Botanical Wonders",
+      "Description": "A compilation of research on rare plants and their ecosystems.",
+      "NotebookID": "NB003",
+      "FileCounts": 3,
+      "Files": {
+        "File1": {"Name": "Exotic_Plants_Guide.pdf", "Type": "Document"},
+        "File2": {"Name": "Ecosystem_Analysis.docx", "Type": "Document"},
+        "File3": {"Name": "Botany_Lecture_Audio.mp3", "Type": "Audio"}
+      }
+    },
+    {
+      "Name": "Ancient Civilizations",
+      "Description": "An insightful journey through the history and discoveries of ancient civilizations.",
+      "NotebookID": "NB004",
+      "FileCounts": 4,
+      "Files": {
+        "File1": {"Name": "Ancient_Egypt_Research.pdf", "Type": "Document"},
+        "File2": {"Name": "Mesopotamia_Study.docx", "Type": "Document"},
+        "File3": {"Name": "Greek_History_Audio.mp3", "Type": "Audio"},
+        "File4": {"Name": "Roman_Empire_Archives.txt", "Type": "Document"}
+      }
+    }
+  ]
+}
