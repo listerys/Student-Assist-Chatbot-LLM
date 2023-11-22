@@ -6,10 +6,10 @@
       "NotebookID": "NB001",
       "FileCounts": 4,
       "Files": {
-        "File1": {"Name": "Quantum_Theory_Overview.pdf", "Type": "Document"},
-        "File2": {"Name": "Particle_Behavior.docx", "Type": "Document"},
-        "File3": {"Name": "Experiment_Results.txt", "Type": "Document"},
-        "File4": {"Name": "Quantum_Lecture_Audio.mp3", "Type": "Audio"}
+        "File1": {"Name": "Quantum_Theory_Overview.pdf", "Type": "Document", "Link": "https://assets.cambridge.org/97805215/91614/sample/9780521591614ws.pdf"},
+        "File2": {"Name": "Particle_Behavior.docx", "Type": "Document", "Link": "https://scholar.harvard.edu/files/david-morin/files/waves_quantum.pdf"},
+        "File3": {"Name": "Experiment_Results.txt", "Type": "Document", "Link": "https://www.astro.uvic.ca/~jwillis/teaching/phys215/phys215_lecture1.pdf"},
+        "File4": {"Name": "Quantum_Lecture_Audio.mp3", "Type": "Audio", "Link": "https://listentogenius.com/recordings4/QuantumTheory.mp3"}
       }
     },
     {
@@ -18,10 +18,10 @@
       "NotebookID": "NB002",
       "FileCounts": 4,
       "Files": {
-        "File1": {"Name": "Stellar_Formations.pdf", "Type": "Document"},
-        "File2": {"Name": "Galactic_Photos.txt", "Type": "Document"},
-        "File3": {"Name": "Astronomy_Lecture_Audio.mp3", "Type": "Audio"},
-        "File4": {"Name": "Cosmic_Timeline.docx", "Type": "Document"}
+        "File1": {"Name": "Stellar_Formations.pdf", "Type": "Document", "Link": "https://chandra.harvard.edu/edu/formal/stellar_ev/story/story.pdf"},
+        "File2": {"Name": "Galactic_Photos.txt", "Type": "Document", "Link": "https://arxiv.org/ftp/arxiv/papers/2308/2308.08492.pdf"},
+        "File3": {"Name": "Astronomy_Lecture_Audio.mp3", "Type": "Audio", "Link": "https://www.buzzsprout.com/2210988/13141568-the-black-mirror-effect-reflecting-on-the-darkside-of-technology-cosmic-chronicles-episode-1.mp3"},
+        "File4": {"Name": "Cosmic_Timeline.docx", "Type": "Document", "Link": "https://www.thelearningodyssey.com/Graphics/Content/Toolkits/OHS/USGovernment/tools/Documents/The_Cosmic_Calendar.pdf"}
       }
     },
     {
@@ -30,9 +30,9 @@
       "NotebookID": "NB003",
       "FileCounts": 3,
       "Files": {
-        "File1": {"Name": "Exotic_Plants_Guide.pdf", "Type": "Document"},
-        "File2": {"Name": "Ecosystem_Analysis.docx", "Type": "Document"},
-        "File3": {"Name": "Botany_Lecture_Audio.mp3", "Type": "Audio"}
+        "File1": {"Name": "Exotic_Plants_Guide.pdf", "Type": "Document", "Link": "https://example.com/exotic_plants_guide"},
+        "File2": {"Name": "Ecosystem_Analysis.docx", "Type": "Document", "Link": "https://example.com/ecosystem_analysis"},
+        "File3": {"Name": "Botany_Lecture_Audio.mp3", "Type": "Audio", "Link": "https://example.com/botany_lecture_audio"}
       }
     },
     {
@@ -41,10 +41,10 @@
       "NotebookID": "NB004",
       "FileCounts": 4,
       "Files": {
-        "File1": {"Name": "Ancient_Egypt_Research.pdf", "Type": "Document"},
-        "File2": {"Name": "Mesopotamia_Study.docx", "Type": "Document"},
-        "File3": {"Name": "Greek_History_Audio.mp3", "Type": "Audio"},
-        "File4": {"Name": "Roman_Empire_Archives.txt", "Type": "Document"}
+        "File1": {"Name": "Ancient_Egypt_Research.pdf", "Type": "Document", "Link": "https://example.com/ancient_egypt_research"},
+        "File2": {"Name": "Mesopotamia_Study.docx", "Type": "Document", "Link": "https://example.com/mesopotamia_study"},
+        "File3": {"Name": "Greek_History_Audio.mp3", "Type": "Audio", "Link": "https://example.com/greek_history_audio"},
+        "File4": {"Name": "Roman_Empire_Archives.txt", "Type": "Document", "Link": "https://example.com/roman_empire_archives"}
       }
     }
   ]

@@ -11,9 +11,16 @@
   /* Container */
   .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 400px; /* Set height to 400px */
+    padding-left: 270px;;
+  }
+  
+  .heading-notebook h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #4CAF50; /* Greenish color for heading */
+    margin-left: 300px;
   }
   
   /* Card */
@@ -94,7 +101,7 @@
 .card .hover-button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 10px; /* Keep this as is */
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -102,6 +109,7 @@
   transition: opacity 0.3s ease;
   padding: 5px; /* Additional padding for a larger clickable area */
 }
+
 
 .card .hover-button img {
   height: 30px; /* Increased size */
@@ -136,4 +144,28 @@
 /* Optional: Change appearance on hover */
 .add-button:hover {
   background-color: #388e3c; /* Darker shade on hover */
+}
+
+
+
+.card .hover-chat-button {
+  position: absolute;
+  top: 10px;
+  right: 50px; /* Adjust right position to move it away from hover-button */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .hover-chat-button,
+.card:hover .hover-button {
+  opacity: 1; /* Visible on hover */
+}
+
+.card .hover-chat-button img {
+  width: 40px; /* Smaller width for the icon */
+  height: 40px; /* Smaller height for the icon */
+  padding: 2px;
 }

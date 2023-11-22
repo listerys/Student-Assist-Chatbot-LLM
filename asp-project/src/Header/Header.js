@@ -64,9 +64,6 @@ const Header = () => {
       <div className="back-button">
         <button onClick={() => window.history.back()}>Back</button>
       </div>
-      <div className="logo">
-        <h1>{selectedModule}</h1>
-      </div>
       <Dropdown selectedModule={selectedModule} setSelectedModule={setSelectedModule} /> {/* Include the Dropdown component here */}
     </header>
   );
