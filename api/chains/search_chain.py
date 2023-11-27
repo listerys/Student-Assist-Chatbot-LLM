@@ -1,6 +1,8 @@
+import os
 import logging
 import inspect
 from typing import Any
+from dotenv import load_dotenv
 
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
@@ -11,8 +13,8 @@ from .memory import CustomMemory
 from .retrievers import faiss_retriever
 
 
-# ToDo: Open API key delete
-openai_api_key = ""
+load_dotenv("./.env")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 log = logging.getLogger(__name__)
 
 
