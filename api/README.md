@@ -56,5 +56,5 @@ Audio to text is in the following files:
 
 ```
 
-## Authors
+## Author
 - **Sri Sasmi Polu - GWU**
