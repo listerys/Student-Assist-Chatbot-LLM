@@ -1,20 +1,19 @@
+# uvicorn main:app --host 0.0.0.0 --port 80 --reload
+from fastapi import FastAPI
 import logging
-from chains.search_chain import search
+import api_routers
 
 
 log = logging.getLogger(__name__)
+app = FastAPI()
+
+# Add routers
+app.include_router(api_routers.router)
 
 
-def main(question, document_path):
-    response = search(question, document_path)
-    print(response["output"])
-    return 0
-
-
-if __name__ == "__main__":
-    q = (
-        "Consider A and B are two sets, such that |A| = 50 , and |A – B| = 20 ,"
-        "\nand |B| = 85 . Find the value of |B – A| ."
-    )
-    dp = ""
-    main(q, dp)
+# Home page
+@app.get("/")
+def home():
+    return {
+        "message": "You are in the home page."
+    }
