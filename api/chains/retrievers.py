@@ -51,7 +51,6 @@ def read_pdf(filepath: str) -> str:
 
 def read_txt(filepath: str) -> str:
     """Reads a text file and converts its text to string."""
-    print("🐶⚽️🏉🎱🐶⚽️🏉🎱")
     with open(filepath, "r") as f:
         file_text = f.read()
     return file_text
