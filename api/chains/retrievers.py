@@ -37,7 +37,7 @@ def read_pdf(filepath: str) -> str:
 
     pdf_text = []
     # TODO: replace this with range(no_of_pages)
-    for idx in range(10):  # range(no_of_pages):
+    for idx in range(no_of_pages):
         page = reader.pages[idx]
         # extracting text from page
         text = page.extract_text()
@@ -86,14 +86,22 @@ def read_documents(document_path: str) -> list[Any]:
 
 def faiss_retriever(document_path: str) -> VectorStore:
     """Retriever for the RAG chain."""
-
-    # documents to search
-    docs = read_documents(document_path)
     # creates embeddings of size 384
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-    # initialize FAISS.
-    docsearch = FAISS.from_documents(docs, embeddings)
+    # if index is saved it will be at below path.
+    saved_index_path = os.path.join(document_path, "faiss_index")
+    # There is an existing index don't need to create it.
+    if os.path.exists(saved_index_path) and (len(os.listdir(saved_index_path)) != 0):
+        # read the saved index
+        docsearch = FAISS.load_local(saved_index_path, embeddings)
+    else:
+        # documents to search
+        docs = read_documents(document_path)
+        # initialize FAISS.
+        docsearch = FAISS.from_documents(docs, embeddings)
+        # save the index.
+        docsearch.save_local(saved_index_path)
 
     # create a retriever.
     retriever = docsearch.as_retriever()
