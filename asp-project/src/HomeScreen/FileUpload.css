@@ -111,3 +111,16 @@ body {
 	background-color: darken(#4caf50, 10%); /* Slightly darker on hover */
   }
   
+  .modal-input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 40px;
+	border: 1px solid #3a3a3a;
+	background-color: #333333;
+	color: #f0f0f0;
+	margin-top: 15px;
+  }
+  
+  /* ... existing styles ... */
+  

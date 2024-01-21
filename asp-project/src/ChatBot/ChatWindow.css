@@ -24,14 +24,16 @@
 
 .message.user {
     background-color: #333;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 .message.bot {
     background-color: #4caf50; /* Theme color updated */
     color: white;
-    align-self: flex-start;
+    align-self: flex-end; /* Align bot messages to the right */
+    max-width: 80%;
 }
+
 
 .input-area {
     display: flex;
@@ -146,4 +148,10 @@
 
 .file-name {
     word-break: break-word; /* Breaks long filenames into multiple lines */
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    /* other styles */
 }
